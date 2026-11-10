@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLAZE LINE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: radial-gradient(ellipse at top left, #006b42, #001b20 65%, #003d43);
+    font-family: Arial, sans-serif;
+    color: #eaf2fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.card {
+    width: 100%;
+    max-width: 460px;
+    background: linear-gradient(145deg, #062a30, #101b30 65%, #002c38);
+    border: 1px solid #334454;
+    border-radius: 34px;
+    padding: 30px 20px 26px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,255,170,.12);
+}
+
+.logo-box {
+    width: 145px;
+    height: 145px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(135deg,#00ffd0,#00c66b,#00eaff);
+    box-shadow: 0 0 20px #00dba880;
+    position: relative;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #101b30;
+}
+
+.check {
+    position: absolute;
+    right: -2px;
+    bottom: 3px;
+    background: #00d878;
+    border: 4px solid #071c2b;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    font-size: clamp(23px, 6vw, 30px);
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: .3px;
+}
+
+.tag {
+    display: inline-block;
+    color: #ffc400;
+    border: 1px solid #8d7015;
+    background: #42350c55;
+    border-radius: 30px;
+    padding: 7px 17px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 14px;
+    background: #172437;
+    border: 1px solid #293346;
+    border-radius: 23px;
+    padding: 15px;
+    margin-bottom: 13px;
+}
+
+.feature-icon {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    background: #004d42;
+    color: #00e68a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.feature-title {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.feature-desc {
+    font-size: 14px;
+    color: #9eafc3;
+    line-height: 1.35;
+}
+
+.join-wrap {
+    background: #004c40;
+    border-radius: 35px;
+    padding: 13px;
+    margin-top: 20px;
+    box-shadow: 0 0 18px #00e7a02a;
+}
+
+.join-btn {
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(100deg,#fff000,#ffc900);
+    border: 3px solid white;
+    border-radius: 25px;
+    color: #080808;
+    font-size: clamp(16px, 4.5vw, 22px);
+    font-weight: 800;
+    padding: 20px 8px;
+    white-space: nowrap;
+}
+
+.join-btn span {
+    margin-right: 9px;
+}
+
+.free {
+    color: #8195a9;
+    font-size: 14px;
+    margin: 12px 0 22px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #29394b;
+    margin-bottom: 17px;
+}
+
+.disclaimer {
+    text-align: left;
+    font-size: 12px;
+    color: #8194a9;
+    line-height: 1.65;
+}
+
+.disclaimer b {
+    color: #a6b8ca;
+}
+
+@media(max-height: 750px) {
+    .card {
+        padding: 18px 17px;
+    }
+    .logo-box {
+        width: 105px;
+        height: 105px;
+        margin-bottom: 15px;
+    }
+    h1 {
+        margin-bottom: 8px;
+    }
+    .tag {
+        margin-bottom: 15px;
+    }
+    .feature {
+        padding: 11px;
+        margin-bottom: 9px;
+    }
+    .join-wrap {
+        margin-top: 13px;
+    }
+    .free {
+        margin-bottom: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="logo-box">
+        <img src="logo.jpg" alt="BLAZE LINE Logo">
+        <div class="check">✓</div>
+    </div>
+
+    <h1>BLAZE LINE</h1>
+
+    <div class="tag">CRICKET TOSS & MATCH ANALYSIS</div>
+
+    <div class="feature">
+        <div class="feature-icon">✓</div>
+        <div>
+            <div class="feature-title">Daily Toss & Match Analysis</div>
+            <div class="feature-desc">Cricket updates and match analysis before every match</div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">⬡</div>
+        <div>
+            <div class="feature-title">Cricket Analysis Strategy</div>
+            <div class="feature-desc">Match insights, statistics & information</div>
+        </div>
+    </div>
+
+    <div class="join-wrap">
+        <a class="join-btn" href="https://t.me/+K3_yGTaVI982OTM9">
+            <span>➤</span> JOIN FREE TELEGRAM NOW
+        </a>
+    </div>
+
+    <div class="free">🔒 100% Free Cricket Channel · No Fee Charged</div>
+
+    <hr>
+
+    <div class="disclaimer">
+        <b>Disclaimer & Safety Notice:</b>
+        This channel and website provide cricket match
+        statistics, information, and analysis for educational
+        and news purposes only. We do not promote or encourage
+        illegal gambling or betting. Sports analysis carries
+        financial risk. Please trade responsibly. No outcomes
+        are guaranteed.
+    </div>
+
+</div>
+
+</body>
+</html>
+
